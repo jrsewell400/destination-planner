@@ -14,8 +14,8 @@ deploy:
   provider: heroku
   api_key:
     secure: aaQnGGJAytBysYPrgX73YZjGqpgKTvkepbJwtLGVSRtlyp9WG+SgFkRM0qKifEfQF/DBfFWIi9poFPLAIwP6xf523jqbal0WJyQqdjdU6Lwca0nVMBHJX40dJTwX9OS/X17r5JNb+MoefvJ0qwSuO5Cy8lXD6RUS5oYi0fAwwW3WbOKiNK7uAwuO8YstdPWDLrJRwi2KaKYjTDKBqMLXOJEcJf+Rfv2DFGShVe1FpJ5+3XaAQqcPj/zOGeZJCLltMXYE0Zf4GqbhvPkDkjsRt9vqCMjiZtZ63kXsXIxXLm15+aw+rE1xsx01mNBMAwOCn0tUb3cKXmY648WIsXGtCgoi2vQMM2taypj4cfajhJ1epUtR8AjxeChhK01SWFXLg+H9AhW0dsmKrlopIz36OTfArVUmnm3tgfag0pZr7WeB1oEbs6yhPJfZFWcnEk6o2Bhxx9h4Pjl2LElLMFxjrNfuDV1+65bcd5Ha6zHIlxinAUwi41uxYKIoJpyhJWwSsDzWce1DpqgPWVoQCh0WAfGCOPYCnlEcUjG9yqCxfwN3vOstfzpjM7v4XzIEREUVmsiDSWTkP/hyxya/3CzE6vp5m/Q+FutLFFdROzaZJoFxKQSNQjHXVr5zOBeIXkLvb9o9xLhT8vMXGBI5orhSnRbKbKeGr0hJ1QYHY4BF3W4=
-  app: crime-time
+  app: jrsewell400/destination-planner
   run: rails db:{migrate,seed}
-  on:
-    repo: jrsewell400/destination-planner
+  # on:
+  #   repo: jrsewell400/destination-planner
   skip_cleanup: 'true'
