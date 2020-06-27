@@ -12,7 +12,8 @@ script:
 - bundle exec rspec
 deploy:
   provider: heroku
-  api_key: cf3ba654-88ba-46c3-b982-a8cfacd8c867
+  api_key:
+    secure: PrydetDCxWdHQE893DJnncY4Osu5vJQPp4z+Qmzj11kGplJTCO6c6jEn7JLTnZWHAWO9PwU47e8ZTuw1rUfOCC81xHMATMYwzFSlnurztD4tGQDjgdgDtwvljzDsQeZGL6H0+7tXBiEFPOGMb1/+lSkrc0TRifWKACoVfIsWCrjUO2L+yDTB5fidBNLsz0WQ2yimtM05bqjH0X+Lq9KngGe8cf00L0th+kGY4B/76dn8lKMhwZ8ka71x8rC4kFpzZZG2zECHYtV7fDJCd7VGje58Zh+L3azXbYG7X16/SLB8CGpbF2Cs1PDUxpW5R+1pbZphbzCDv7gfzbIOy79k6nfxbg6+ZiqwNCBW5LjxdWsghCdbED47rjVLx/fcAWNSYPcZduSbOQQQaji3EOnDSbH+uAqM7BJXQ6Fz75SNc+KmsAw/Cvc6nPANEukS+2ictAelUctzico06tkmuX0/mt51dPUrFgDpmqZtNayzPtoX4ZwC7ziPr2LS25ofVHEaIF4gZTBZBf+g7BGIp1O1RIT1IN1cIwZ+ODXCr2zUoQwxMLUdLg6CrHXnci/21Q2XFw2ifjpfMFP5mf3PzEjVUDQkgg1AnXgCfz41r5HJPhr4mz720s86yhPy3Tzl/WGmbGeeLs9PGpVqer2YUHiIO6Gv+IB4wk/irSesg16hIMg=
   app: destination-planner
   run: rails db:{migrate,seed}
   skip_cleanup: 'true'
