@@ -2,7 +2,8 @@ class ShowWeather
   attr_reader :date, :high, :low, :current, :summary
   
   def initialize(weather_poro_info)
-    @date = DateTime.new(weather_poro_info[:dt]).to_date
+    # binding.pry
+    @date = Time.at(weather_poro_info[:dt]).strftime('%A, %B %d, %Y')
     @high = convert_temp(weather_poro_info[:main][:temp_max]).round(0)
     @low = convert_temp(weather_poro_info[:main][:temp_min]).round(0)
     @current = convert_temp(weather_poro_info[:main][:temp]).round(0)
